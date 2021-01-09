@@ -1,0 +1,21 @@
+import random
+
+user_rangel = "int"
+# Receives user input for the lower bound and checks if what is given is an integer
+while type(user_rangel) is not int:
+  user_rangel = input("Please enter the lower end of the range: ")
+
+  if user_rangel.isdigit():
+  	user_rangel = int (user_rangel)
+  else:
+		print("Error. Only integers are allowed!")
+        
+user_rangeh = "int"
+# Receives user input for the upper bound and checks if what is given is an integer
+while type(user_rangeh) is not int:
+  user_rangeh = input("Please enter the higher end of the range: ")
+
+  if user_rangeh.isdigit():
+  	user_rangeh = int (user_rangel)
+  else:
+  	print("Error. Only integers are allowed!")
